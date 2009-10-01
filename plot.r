@@ -16,4 +16,3 @@ lines(cherry$Year, cherry$IndexLE, col="green")
 cor(df$IndexLE, df$IndexGDP, use="pairwise")
 
 sd(df$LifeExpectancy, na.rm=T)
-
