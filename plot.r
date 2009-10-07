@@ -20,7 +20,3 @@ cherry <- subset(df, df$Year >= as.Date("1920-01-01") & df$Year <= as.Date("1940
 # plot only cherry picked data and range
 plot(cherry$Year, cherry$IndexGDP, type="l", ylim=range(cherry$IndexGDP, cherry$IndexLE, na.rm=T), xlab="Year", ylab="Index")
 lines(cherry$Year, cherry$IndexLE, col="green")
-
-cor(df$IndexLE, df$IndexGDP, use="pairwise")
-
-sd(df$LifeExpectancy, na.rm=T)
